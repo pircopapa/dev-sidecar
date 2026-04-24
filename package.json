@@ -12,7 +12,8 @@
     "lint": "eslint packages --ext .js,.vue",
     "lint:fix": "eslint packages --ext .js,.vue --fix",
     "test": "jest",
-    "postinstall": "node scripts/postinstall.js || exit 0"
+    "postinstall": "node scripts/postinstall.js || exit 0",
+    "clean": "rm -rf node_modules packages/core/node_modules packages/gui/node_modules"
   },
   "workspaces": [
     "packages/core",
@@ -47,5 +48,6 @@
     "node": ">=20.0.0",
     "npm": ">=10.0.0"
   },
-  "_note": "personal fork for learning purposes - upstream: docmirror/dev-sidecar"
+  "_note": "personal fork for learning purposes - upstream: docmirror/dev-sidecar",
+  "_fork_notes": "added 'clean' script for convenience when switching branches or troubleshooting install issues"
 }
