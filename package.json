@@ -46,5 +46,6 @@
   "engines": {
     "node": ">=20.0.0",
     "npm": ">=10.0.0"
-  }
+  },
+  "_note": "personal fork for learning purposes - upstream: docmirror/dev-sidecar"
 }
