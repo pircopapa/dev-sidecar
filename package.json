@@ -21,7 +21,8 @@
     "lint:report": "eslint packages --ext .js,.vue --format json -o eslint-report.json",
     "log": "git log --oneline --graph --decorate -20",
     "log:full": "git log --oneline --graph --decorate --all",
-    "sync:upstream": "git fetch upstream && git merge upstream/main"
+    "sync:upstream": "git fetch upstream && git merge upstream/main",
+    "diff:upstream": "git log upstream/main..HEAD --oneline"
   },
   "workspaces": [
     "packages/core",
@@ -57,5 +58,5 @@
     "npm": ">=10.0.0"
   },
   "_note": "personal fork for learning purposes - upstream: docmirror/dev-sidecar",
-  "_fork_notes": "added 'clean' script for convenience when switching branches or troubleshooting install issues; added 'clean:install' as a one-liner for full reinstall; added test:watch and test:coverage for easier local dev; added check:updates to quickly see what deps are outdated; added lint:report to dump eslint results to a file for review; added 'log' script as a handy git shortcut; added 'log:full' to see all branches in the log; added 'sync:upstream' to make pulling in upstream changes a bit easier"
+  "_fork_notes": "added 'clean' script for convenience when switching branches or troubleshooting install issues; added 'clean:install' as a one-liner for full reinstall; added test:watch and test:coverage for easier local dev; added check:updates to quickly see what deps are outdated; added lint:report to dump eslint results to a file for review; added 'log' script as a handy git shortcut; added 'log:full' to see all branches in the log; added 'sync:upstream' to make pulling in upstream changes a bit easier; added 'diff:upstream' to quickly see what commits I have that upstream doesn't"
 }
