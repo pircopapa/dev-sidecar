@@ -18,7 +18,8 @@
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
     "check:updates": "npx npm-check-updates",
-    "lint:report": "eslint packages --ext .js,.vue --format json -o eslint-report.json"
+    "lint:report": "eslint packages --ext .js,.vue --format json -o eslint-report.json",
+    "log": "git log --oneline --graph --decorate -20"
   },
   "workspaces": [
     "packages/core",
@@ -54,5 +55,5 @@
     "npm": ">=10.0.0"
   },
   "_note": "personal fork for learning purposes - upstream: docmirror/dev-sidecar",
-  "_fork_notes": "added 'clean' script for convenience when switching branches or troubleshooting install issues; added 'clean:install' as a one-liner for full reinstall; added test:watch and test:coverage for easier local dev; added check:updates to quickly see what deps are outdated; added lint:report to dump eslint results to a file for review"
+  "_fork_notes": "added 'clean' script for convenience when switching branches or troubleshooting install issues; added 'clean:install' as a one-liner for full reinstall; added test:watch and test:coverage for easier local dev; added check:updates to quickly see what deps are outdated; added lint:report to dump eslint results to a file for review; added 'log' script as a handy git shortcut"
 }
