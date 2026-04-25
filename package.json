@@ -14,7 +14,9 @@
     "test": "jest",
     "postinstall": "node scripts/postinstall.js || exit 0",
     "clean": "rm -rf node_modules packages/core/node_modules packages/gui/node_modules",
-    "clean:install": "npm run clean && npm install"
+    "clean:install": "npm run clean && npm install",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
   },
   "workspaces": [
     "packages/core",
@@ -50,5 +52,5 @@
     "npm": ">=10.0.0"
   },
   "_note": "personal fork for learning purposes - upstream: docmirror/dev-sidecar",
-  "_fork_notes": "added 'clean' script for convenience when switching branches or troubleshooting install issues; added 'clean:install' as a one-liner for full reinstall"
+  "_fork_notes": "added 'clean' script for convenience when switching branches or troubleshooting install issues; added 'clean:install' as a one-liner for full reinstall; added test:watch and test:coverage for easier local dev"
 }
